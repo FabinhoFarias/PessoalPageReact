@@ -1,0 +1,87 @@
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box ;
+  display: flex;
+  flex-direction: row; /* Começa a inserir no sentido linha  */
+  align-items: flex-start; /* Insere da esquerda -> direita */
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* Alinha os itens com espaço entre eles, um à esquerda e outro à direita */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  height: 10vh;
+  width: 80vw; /* Limita o tamanho do header para 80% da largura da tela */
+  /* background-color: aqua; */
+  border-bottom: 2px solid #000;
+  /* padding: 0 10px; Adiciona espaçamento à esquerda e à direita */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave */
+}
+
+
+.header{
+  /* background-color: #000; */
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+ul li{
+  all: unset;
+  margin: 0;
+}
+
+ul{
+  display: flex;
+  gap: 130px;
+  /* background-color: aqua; */
+}
+
+li{
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(255, 140, 0);
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
