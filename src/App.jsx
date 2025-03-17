@@ -1,34 +1,22 @@
 import { useState } from 'react'
 import './App.css'
+import Header from './components/header.jsx'
+import Main from './components/main.jsx'
+import Sidebar from './components/sidebar.jsx'
+import Conteudos from './components/conteudos.jsx'
 
-
-
-function Header() {
-  
-
-  return (
-    <div className='header'>
-      <header>
-        <button>Fábio Filho</button>
-          
-          <ul>
-            <li>Ensino</li>
-            <li>Projetos</li>
-          </ul>
-
-      </header>
-    </div>
-  )
-}
-https://github.com/FabinhoFarias/PessoalPageReact
+// https://github.com/FabinhoFarias/PessoalPageReact
 function App() {
-  
-
   return (
     <>
-      <Header/>      
-    </>
-  )
-}
+      <Header/>
+      <div className='containerPrincipal'>
+        <Sidebar/>
+        {/* <Main/> */}
+        <Conteudos/>
 
+      </div>
+    </>
+  );
+}
 export default App
